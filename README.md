@@ -47,4 +47,4 @@ ALTER ROLE db_datawriter ADD MEMBER "<MSI user display name>" -- grant permissio
 
 ```
 
-We are ready to go!
+We are ready to go! Check out the source code of the demo function: https://github.com/crgarcia12/azure-function-msi-python/blob/master/listnames/__init__.py
