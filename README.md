@@ -38,6 +38,8 @@ Now, we need to connect to the DB using the AAD Admin we have set before:
 ![sql-login-using-aad-part1](docs/3-sql-login-using-aad-part1.png){:height="30%" width="30%"}
 ![sql-login-using-aad-part2](docs/4-sql-login-using-aad-part2.png){:height="20%" width="20%"}
 
+<img src="docs/4-sql-login-using-aad-part2.png" width="100" height="100">
+
 We are ready to add the MSI user to the DB. For that we run this query
 
 ```sql
