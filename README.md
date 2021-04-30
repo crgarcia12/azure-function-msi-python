@@ -2,7 +2,7 @@
 
 ## 1. Enable MSI in your AzFunction:
 This is really simple to do. Rememeber the Object ID (number 4) as we will need it later
-![function-enable-msi](docs/1-function-enable-msi.png)
+<img src="docs/1-function-enable-msi.png" width="70%" height="70%">
 
 ## 2. Enable AAD in your DB:
 We need to do two things:
@@ -35,7 +35,7 @@ ObjectId AppId DisplayName
 
 Now, we need to connect to the DB using the AAD Admin we have set before:
 
-<img src="docs/3-sql-login-using-aad-part1.png" width="30%" height="30%">
+<img src="docs/3-sql-login-using-aad-part1.png" width="50%" height="50%">
 <img src="docs/4-sql-login-using-aad-part2.png" width="50%" height="50%">
 
 We are ready to add the MSI user to the DB. For that we run this query
