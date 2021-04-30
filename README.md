@@ -35,8 +35,8 @@ ObjectId AppId DisplayName
 
 Now, we need to connect to the DB using the AAD Admin we have set before:
 
-![sql-login-using-aad-part1](docs/3-sql-login-using-aad-part1.png)
-![sql-login-using-aad-part2](docs/4-sql-login-using-aad-part2.png)
+![sql-login-using-aad-part1](docs/3-sql-login-using-aad-part1.png){:height="30%" width="30%"}
+![sql-login-using-aad-part2](docs/4-sql-login-using-aad-part2.png){:height="20%" width="20%"}
 
 We are ready to add the MSI user to the DB. For that we run this query
 
