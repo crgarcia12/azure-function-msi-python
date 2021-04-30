@@ -29,12 +29,12 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
             with conn.cursor() as cursor:
                 #Sample select query
-                cursor.execute("SELECT * FROM People;") 
+                cursor.execute("SELECT Name FROM People;") 
 
-                peopleNames = 'Names: '
+                peopleNames = ''
                 row = cursor.fetchone() 
                 while row: 
-                    peopleNames += str(row[0]) + ', ' 
+                    peopleNames += str(row[0]).strip() + " " 
                     row = cursor.fetchone()
 
                 return func.HttpResponse(f"Hello {peopleNames}!")
