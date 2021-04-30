@@ -13,7 +13,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         # Connecting to Azure SQl the standard way
         server = 'tcp:crgar-paas-msi-python-sqlserver.database.windows.net' 
         database = 'crgar-paas-msi-python-db' 
-        driver = '{ODBC Driver 13 for SQL Server}'
+        driver = '{ODBC Driver 17 for SQL Server}'
 
         with pyodbc.connect(
             "Driver="
@@ -39,4 +39,4 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
                 return func.HttpResponse(f"Hello {peopleNames}!")
     except Exception as e:
-        return func.HttpResponse(e)
+        return func.HttpResponse(str(e))
