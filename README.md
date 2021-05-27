@@ -14,7 +14,8 @@ We need to do two things:
 1. Add the Function MSI User to the specific DB
 
 ### 2.1 Enable AAD admin in the server
-
+In here you need to add your user (for example, the one you are using to access the portal) as an admin of the DB
+This has two purposes: Add AAD integration to the DB, and set the user that will grant permissions to the MSI inside the DB
 ![db-aad-integration](docs/2-db-aad-integration.png)
 
 
@@ -51,4 +52,4 @@ ALTER ROLE db_datawriter ADD MEMBER "<MSI user display name>" -- grant permissio
 
 ```
 
-We are ready to go!
+We are ready to go! Check out the source code of the demo function: https://github.com/crgarcia12/azure-function-msi-python/blob/master/listnames/__init__.py
