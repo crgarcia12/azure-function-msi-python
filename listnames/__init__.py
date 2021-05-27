@@ -11,8 +11,8 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         logging.info('Python HTTP trigger function processed a request.')
 
         # Connecting to Azure SQl the standard way
-        server = 'tcp:crgar-paas-msi-python-sqlserver.database.windows.net' 
-        database = 'crgar-paas-msi-python-db' 
+        server = 'tcp:crgar-paas-pythonmsi-sqlserver.database.windows.net' 
+        database = 'peopledb' 
         driver = '{ODBC Driver 17 for SQL Server}'
 
         with pyodbc.connect(
@@ -29,7 +29,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
             with conn.cursor() as cursor:
                 #Sample select query
-                cursor.execute("SELECT Name FROM People;") 
+                cursor.execute("SELECT TOP 3 [FirstName] FROM [SalesLT].[Customer]") 
 
                 peopleNames = ''
                 row = cursor.fetchone() 
