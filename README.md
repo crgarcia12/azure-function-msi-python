@@ -1,4 +1,4 @@
-# Testing Azure Managed Identities for Azure SQL from Python Azure Functions
+# Connecting Python Azure Functions to Azure SQL with Managed Identities (MSI)
 This repo is an example on how you can connect your Python 3.9 Azure Function to Azure Sql using System Managed Identities instead of Username&Password.
 
 For that you need to create an Azure Function with runtime Python 3.9, a SQL DB with the demo DB, and then execute the following steps
