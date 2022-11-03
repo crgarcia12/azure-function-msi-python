@@ -2,6 +2,9 @@
 # FROM mcr.microsoft.com/azure-functions/python:2.0-python3.6-appservice
 FROM mcr.microsoft.com/azure-functions/python:2.0-python3.6
 
+# COPY install-odbc.sh /
+# RUN /install-odbc.sh
+
 ENV AzureWebJobsScriptRoot=/home/site/wwwroot \
     AzureFunctionsJobHost__Logging__Console__IsEnabled=true
 
